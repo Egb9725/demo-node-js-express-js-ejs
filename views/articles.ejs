@@ -5,7 +5,10 @@
 <ul>
   <% for (let article of articles){ %>
 
-  <li><a href="<%=`/articles/${article.slug}`%>"><%= article.title %></a></li>
+  <li>
+    <a href="<%=`/articles/${article.slug}`%>"><%= article.title %></a>
+
+  </li>
 
   <% } %>
 </ul>
