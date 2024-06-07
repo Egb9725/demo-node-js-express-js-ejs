@@ -2,10 +2,12 @@
 
 <h1><%= article.title %></h1>
 <p><%= article.description %></p>
-<p><%= article.author %>   <%= article.publishedAt%></p>
+<div class="container">
+    <p class="author" ><%= article.author  %> </p>
+    <p class="publishedAt"><%= article.publishedAt%></p>    
+</div>
 <img src="<%= article.urlToImage %>" alt=""> 
 <br>
 <a href="http://"><%= article.url %></a>
-
 
 <%- include("./partials/footer.ejs") %>
